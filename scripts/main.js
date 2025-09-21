@@ -1,3 +1,12 @@
+// Auto-scroll to Google Form confirmation after submission
+window.addEventListener('message', function(event) {
+  if (typeof event.data === 'string' && event.data.indexOf('Thank you') !== -1) {
+    var contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+});
 (function () {
   const root = document.documentElement;
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
