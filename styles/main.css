@@ -1,3 +1,61 @@
+/* Blogs & Publications */
+.blogs .blog-list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 2.5rem;
+}
+.blog-card {
+  background: var(--color-glass);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-elevated);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.blog-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+}
+.blog-card a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.blog-card a:hover {
+  text-decoration: underline;
+}
+.blog-meta {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+
+/* Awards & Certifications */
+.awards .awards-list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 2.5rem;
+}
+.award-card {
+  background: var(--color-glass);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-elevated);
+  padding: 1.5rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.award-card h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.1rem;
+}
+.award-meta {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
 :root {
   --font-sans: 'Inter', 'Segoe UI', Roboto, sans-serif;
   --font-serif: 'Playfair Display', 'Georgia', serif;
@@ -618,8 +676,32 @@ body::before {
 }
 
 .contact-form {
-  display: grid;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+.contact-form iframe {
+  width: 100%;
+  max-width: 640px;
+  min-width: 0;
+  min-height: 700px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-elevated);
+  background: var(--color-surface);
+  border: none;
+  display: block;
+}
+/* Auto-scroll to Google Form confirmation after submission */
+.google-form-confirmation {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center;
+  min-height: 300px;
 }
 
 .form-grid {
@@ -672,7 +754,7 @@ body::before {
 }
 
 .privacy-note {
-  margin: 0;
+  margin: 0.5rem 0 0 0;
   font-size: 0.9rem;
   color: var(--color-muted);
 }
