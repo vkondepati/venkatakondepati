@@ -1,521 +1,696 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Portfolio website for Venkata (Venkat) Kondepati – data, analytics, and cloud transformation leader."
-    />
-    <title>Venkata Kondepati | Data &amp; Cloud Transformation Leader</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Playfair+Display:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  </head>
-  <body>
-    <div class="page-background" aria-hidden="true">
-      <div class="gradient gradient-one"></div>
-      <div class="gradient gradient-two"></div>
-      <div class="noise"></div>
-    </div>
 
-    <header class="site-header">
-      <div class="container header-container">
-        <a class="brand" href="#hero" aria-label="Venkata Kondepati home">
-          <span class="brand-symbol">VK</span>
-          <span class="brand-text">Venkata Kondepati</span>
-        </a>
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="primary-navigation"
-        >
-          <span class="sr-only">Toggle navigation</span>
-          <span class="nav-toggle-bar"></span>
-          <span class="nav-toggle-bar"></span>
-          <span class="nav-toggle-bar"></span>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Portfolio website for Venkata (Venkat) Kondepati – data, analytics, and cloud transformation leader." />
+  <title>Venkata Kondepati | Data &amp; Cloud Transformation Leader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+
+<body>
+  <div class="page-background" aria-hidden="true">
+    <div class="gradient gradient-one"></div>
+    <div class="gradient gradient-two"></div>
+    <div class="noise"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a class="brand" href="#hero" aria-label="Venkata Kondepati home">
+        <span class="brand-symbol">VK</span>
+        <span class="brand-text">Venkata Kondepati</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#spotlight">Spotlight</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#insights">Insights</a></li>
+          <li><a href="#blogs">Blogs & Publications</a></li>
+          <li><a href="#awards">Awards & Certifications</a></li>
+          <li><a href="#contact">Connect</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <span class="theme-icon">🌙</span>
         </button>
-        <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#spotlight">Spotlight</a></li>
-            <li><a href="#expertise">Expertise</a></li>
-            <li><a href="#insights">Insights</a></li>
-            <li><a href="#blogs">Blogs & Publications</a></li>
-            <li><a href="#awards">Awards & Certifications</a></li>
-            <li><a href="#contact">Connect</a></li>
-          </ul>
-          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
-            <span class="theme-icon">🌙</span>
-          </button>
-        </nav>
-      </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-      <section id="hero" class="hero">
-        <div class="container hero-container">
-          <div class="hero-portrait" aria-label="Stylised portrait of Venkata Kondepati">
-            <div class="portrait-card">
-              <div class="portrait-ring">
-                <div class="portrait-glow"></div>
-                <div class="portrait-image">
-                  <img src="assets/venkat.jpg" alt="Venkata Kondepati portrait" />
-                </div>
-              </div>
-              <div class="portrait-caption">
-                <span>Data &amp; Analytics Executive</span>
-                <span>Cloud | AI | Platforms</span>
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-container">
+        <div class="hero-portrait" aria-label="Stylised portrait of Venkata Kondepati">
+          <div class="portrait-card">
+            <div class="portrait-ring">
+              <div class="portrait-glow"></div>
+              <div class="portrait-image">
+                <img src="assets/venkat.jpg" alt="Venkata Kondepati portrait" />
               </div>
             </div>
-          </div>
-          <div class="hero-intro">
-            <span class="eyebrow">Strategic data &amp; AI leadership</span>
-            <h1>Venkata (Venkat) Kondepati</h1>
-            <p>
-              Modernising data ecosystems, activating AI capabilities, and steering global delivery teams so that
-              enterprises can move from raw information to measurable business outcomes.
-            </p>
-            <div class="hero-actions">
-              <a class="button primary" href="#contact">Start a conversation</a>
-              <a class="button ghost" href="assets/venkata-kondepati-resume.pdf" download>Download resume</a>
-            </div>
-            <dl class="hero-stats" aria-label="Career highlights">
-              <div>
-                <dt>Years delivering transformation</dt>
-                <dd><span class="stat-number">20+</span></dd>
-              </div>
-              <div>
-                <dt>Enterprise programmes guided</dt>
-                <dd><span class="stat-number">25</span></dd>
-              </div>
-              <div>
-                <dt>Global teams mentored</dt>
-                <dd><span class="stat-number">3</span> continents</dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="section about">
-        <div class="container">
-          <div class="section-header">
-            <span class="eyebrow">About</span>
-            <h2>From data vision to measurable value</h2>
-            <p>
-              Venkat partners with senior leadership to translate complex data ambitions into resilient
-              platforms, responsibly governed information, and intelligent experiences that propel growth.
-            </p>
-          </div>
-          <div class="section-body">
-            <article class="about-card">
-              <h3>Trusted advisor &amp; builder</h3>
-              <p>
-                A technologist by craft and strategist at heart, Venkat Kondepati brings over two decades of expertise in cloud engineering, data platforms, 
-                and enterprise architecture. He has led large-scale global migrations to the cloud, architected multi-region high-availability platforms and 
-                AI-driven insight engines, and championed product-thinking across distributed teams. With a proven record of delivery excellence and 
-                change enablement, Venkat consistently bridges technology strategy with measurable business impact.
-              </p>
-              <ul class="chip-list">
-                <li>Enterprise data platforms</li>
-                <li>AI/ML acceleration</li>
-                <li>Cloud modernization</li>
-                <li>Data governance &amp; quality</li>
-                <li>Enterprise GIS</li>
-                <li>Global delivery leadership</li>
-              </ul>
-            </article>
-            <article class="about-card">
-              <h3>Outcome obsessed</h3>
-              <p>
-                Venkat is known for aligning cross-functional groups around shared OKRs, embedding measurement into
-                every initiative, and leaving clients with sustainable capabilities that endure past launch.
-              </p>
-              <div class="impact-grid">
-                <div>
-                  <span class="impact-number">$850M</span>
-                  <span class="impact-caption">Value unlocked for transformation portfolios*</span>
-                </div>
-                <div>
-                  <span class="impact-number">200+</span>
-                  <span class="impact-caption">Data professionals coached</span>
-                </div>
-              </div>
-              <p class="footnote">*Aggregated business value across long-term programmes.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="experience" class="section experience">
-        <div class="container">
-          <div class="section-header centered">
-            <span class="eyebrow">Career timeline</span>
-            <h2>Guiding enterprise-scale data journeys</h2>
-            <p>
-              Highlights from Venkat's leadership across consulting, industry, and product organizations.
-            </p>
-          </div>
-          <div class="timeline">
-            <article class="timeline-item">
-              <span class="timeline-year">Aug 2025 — Present</span>
-              <h3>Manager, Data Architecture &amp; Engineering</h3>
-              <p class="timeline-organization">Ascentt</p>
-              <p>
-                Lead Technical Data Architecture and Engineering Solutions to deliver scalable, secure, and high-performance enterprise platforms, aligning with business objectives and industry best practices.
-              </p>
-              <ul>
-                <li>Perform prototypes and design innovative, affordable, and sustainable solutions leveraging Snowflake, Databricks, Generative AI (GenAI), Machine Learning (ML), Artificial Intelligence (AI), and Agentic AI to address complex business and operational challenges.</li>
-                <li>Architect and implement Geospatial and Spatial Intelligence solutions integrating large-scale spatial datasets with advanced analytics to support decision-making across multiple industries.</li>
-                <li>Drive Cloud Engineering and Operations, enabling high availability, cost optimization, automation, and performance tuning across AWS, Azure, and GCP environments.</li>
-                <li>Collaborate with cross-functional teams to ensure solutions are future-ready, compliant with governance policies, and optimized for operational excellence.</li>
-              </ul>
-            </article>
-            <article class="timeline-item">
-              <span class="timeline-year">Mar 2010 — June 2025</span>
-              <h3>Director, Data &amp; AI Platforms</h3>
-              <p class="timeline-organization">S&P Global</p>
-              <p>
-                Led global engineering teams to modernize platforms, strengthen cybersecurity, and deliver large-scale cloud transformation across Identity & Access Management, Cloud Operations, and Data Engineering.
-              </p>
-              <ul>
-                <li>Directed Customer IAM (SAM Platform), building a multi-region active-active identity ecosystem supporting 1.4M users and 80+ applications.</li>
-                <li>Orchestrated large-scale cloud migrations, modernizing legacy platforms with AWS, Azure, and GCP.</li>
-                <li>Built and scaled Snowflake-based data lakes and Kubernetes (EKS/AKS) workloads.</li>
-                <li>Implemented DevSecOps pipelines with Terraform, SonarQube, Mend, and ArgoCD to ensure security and automation.</li>
-                <li>Embedded FinOps practices, IAM policies, and compliance controls for cost optimization and governance.</li>
-                <li>Fostered a culture of product thinking, agile execution, and delivery excellence across distributed teams.</li>
-              </ul>
-            </article>
-
-            <article class="timeline-item">
-              <span class="timeline-year">Feb 2007 — Feb 2010</span>
-              <h3>Technical Lead – GIS &amp; Data</h3>
-              <p class="timeline-organization">Wipro Technologies Ltd.</p>
-              <p>
-                Led enterprise application development and large-scale GIS projects for global clients, delivering innovative solutions in energy, utilities, and public sector domains.
-              </p>
-              <ul>
-                <li>Directed end-to-end project delivery, managing cross-functional teams and client stakeholders across geographies.</li>
-                <li>Designed and implemented GIS-based solutions (ArcGIS, ArcInfo, ArcView, AutoCAD Map) to support land management, utilities, and infrastructure projects.</li>
-                <li>Migrated legacy GIS platforms to modern enterprise systems, improving scalability and data accuracy.</li>
-                <li>Introduced Agile practices and quality controls to improve delivery timelines and reduce defects.</li>
-                <li>Recognized for on-time, high-quality delivery and client satisfaction on multimillion-dollar engagements.</li>
-              </ul>
-            </article>
-
-            <article class="timeline-item">
-              <span class="timeline-year">Feb 2004 — Feb 2007</span>
-              <h3>GIS Developer &amp; Analyst</h3>
-              <p class="timeline-organization">Avineon India Pvt Ltd.</p>
-              <p>
-                Automated spatial data validation and geometric integrity checks, 
-                logging violations in a centralized error-tracking database—enhancing overall data quality and consistency.
-              </p>
-              <ul>
-                <li>Designed and developed a custom data migration tool to convert data across multiple GIS formats (DWG, DGN, SHP, PGDB, and SDE) without FME, saving on licensing costs and improving flexibility.</li>
-                <li>Integrated Autodesk Map workflows with ArcMap to simplify dimension capture processes, improving accuracy and reducing manual effort during data creation and editing phases.</li>
-              </ul>
-            </article>
-
-            <article class="timeline-item">
-              <span class="timeline-year">Apr 2001 — Feb 2004</span>
-              <h3>CAD &amp; GIS Engineer</h3>
-              <p class="timeline-organization">Trigeo Technologies Pvt Ltd.</p>
-              <p>
-                Conducted comprehensive quality control and accuracy verification to ensure data integrity and alignment with engineering standards.
-                Led and mentored a team of GIS analysts, providing day-to-day supervision, technical training, and performance feedback to deliver high-quality geospatial deliverables on schedule.
-              </p>
-              <ul>
-                <li>Digitized stormwater pipeline networks using plat maps, survey drawings, and land base references, ensuring accurate and reliable infrastructure modeling for urban planning.</li>
-                <li>Developed custom AML scripts to automate tasks such as annotation placement, layer clipping, and spatial alignment—reducing manual effort and improving production speed.</li>
-              </ul>
-            </article>
-
-          </div>
-        </div>
-      </section>
-
-      <section id="spotlight" class="section spotlight">
-        <div class="container">
-          <div class="section-header">
-            <span class="eyebrow">Spotlight</span>
-            <h2>Signature programmes &amp; proof points</h2>
-            <p>
-              A snapshot of programmes that showcase Venkat's blend of strategy, architecture, and empathetic
-              leadership.
-            </p>
-          </div>
-          <div class="spotlight-grid">
-            <article class="spotlight-card">
-              <h3>Customer 360 intelligence fabric</h3>
-              <p>
-                Harmonized fragmented data into a privacy-first graph, empowering marketers and service teams with a
-                360° view that elevated personalization, retention, and compliance readiness.
-              </p>
-              <ul>
-                <li>Deployed event-driven pipelines across Azure and Snowflake.</li>
-                <li>Activated real-time propensity models with MLOps guardrails.</li>
-                <li>Delivered measurable uplift: +22% cross-sell, -18% churn.</li>
-              </ul>
-            </article>
-            <article class="spotlight-card">
-              <h3>Intelligent operations nerve center</h3>
-              <p>
-                Orchestrated a command centre experience blending IoT telemetry, predictive maintenance, and scenario
-                planning dashboards for a global manufacturer.
-              </p>
-              <ul>
-                <li>Integrated OT and IT data across 30+ plants.</li>
-                <li>Established a digital twin for asset reliability and workforce safety.</li>
-                <li>Unlocked $120M in cost avoidance within two years.</li>
-              </ul>
-            </article>
-            <article class="spotlight-card">
-              <h3>Data culture transformation</h3>
-              <p>
-                Partnered with HR and business leaders to craft a change playbook—combining skill academies, community
-                rituals, and KPI storytelling—to embed data literacy and experimentation.
-              </p>
-              <ul>
-                <li>Designed curricula for analyst, product, and executive personas.</li>
-                <li>Launched a data value scorecard across 40 product lines.</li>
-                <li>Lifted engagement scores by 30 points within the first year.</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="expertise" class="section expertise">
-        <div class="container">
-          <div class="section-header centered">
-            <span class="eyebrow">Expertise</span>
-            <h2>End-to-end capabilities</h2>
-            <p>Core strengths that Venkat brings to every engagement.</p>
-          </div>
-          <div class="expertise-grid">
-            <article class="expertise-card">
-              <h3>Strategy &amp; vision</h3>
-              <p>
-                Portfolio roadmapping, value framing, executive storytelling, and OKR alignment that keep investments
-                tied to business priorities.
-              </p>
-            </article>
-            <article class="expertise-card">
-              <h3>Architecture leadership</h3>
-              <p>
-                Cloud-native reference architectures, data mesh &amp; fabric patterns, API-first integration, and modern
-                analytics/AI platforms.
-              </p>
-            </article>
-            <article class="expertise-card">
-              <h3>Delivery excellence</h3>
-              <p>
-                Lean portfolio management, DataOps, product operating models, and scaled agile ceremonies across global
-                teams.
-              </p>
-            </article>
-            <article class="expertise-card">
-              <h3>Change enablement</h3>
-              <p>
-                Communication architectures, literacy programmes, and community-building that ensure adoption,
-                compliance, and sustainable success.
-              </p>
-            </article>
-            <article class="expertise-card">
-              <h3>Governance &amp; trust</h3>
-              <p>
-                Metadata strategy, privacy-by-design, Responsible AI, and regulatory alignment for highly scrutinized
-                industries.
-              </p>
-            </article>
-            <article class="expertise-card">
-              <h3>Innovation &amp; incubation</h3>
-              <p>
-                Rapid experimentation frameworks, venture-style incubators, and partnerships with startups, academia,
-                and hyperscalers.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="insights" class="section insights">
-        <div class="container">
-          <div class="section-header">
-            <span class="eyebrow">Featured insights</span>
-            <h2>Perspectives &amp; speaking highlights</h2>
-            <p>Selected topics Venkat regularly shares with boards, executive teams, and industry forums.</p>
-          </div>
-          <div class="insight-grid">
-            <article class="insight-card">
-              <h3>Modern data operating models</h3>
-              <p>
-                A pragmatic approach to data product thinking, federated stewardship, and value-realization metrics that
-                resonate with both business and technology stakeholders.
-              </p>
-              <a class="text-link" href="#contact">Request the keynote deck →</a>
-            </article>
-            <article class="insight-card">
-              <h3>Responsible AI guardrails</h3>
-              <p>
-                Balancing innovation with accountability through model risk frameworks, transparent governance, and
-                human-centred design practices.
-              </p>
-              <a class="text-link" href="#contact">Invite Venkat to speak →</a>
-            </article>
-            <article class="insight-card">
-              <h3>Cloud economics for data leaders</h3>
-              <p>
-                Lessons learned from migrating mission-critical workloads, optimizing spend, and sustaining agile
-                delivery across hybrid environments.
-              </p>
-              <a class="text-link" href="#contact">Schedule a briefing →</a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="blogs" class="section blogs">
-        <div class="container">
-          <div class="section-header centered">
-            <span class="eyebrow">Blogs & Publications</span>
-            <h2>Thought Leadership & Insights</h2>
-            <p>Explore Venkat's latest articles, whitepapers, and featured publications on data, analytics, and digital transformation.</p>
-          </div>
-          <div class="blog-list">
-            <article class="blog-card">
-              <h3><a href="#">The Future of Data Platforms</a></h3>
-              <p>How modern architectures are reshaping business agility and innovation.</p>
-              <span class="blog-meta"> </span>
-            </article>
-            <article class="blog-card">
-              <h3><a href="#">AI Ethics in Practice</a></h3>
-              <p>Building responsible AI systems for regulated industries.</p>
-              <span class="blog-meta"> </span>
-            </article>
-            <article class="blog-card">
-              <h3><a href="#">Cloud Migration Playbook</a></h3>
-              <p>Lessons learned from 20+ enterprise cloud journeys.</p>
-              <span class="blog-meta"> </span>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="awards" class="section awards">
-        <div class="container">
-          <div class="section-header centered">
-            <span class="eyebrow">Awards & Certifications</span>
-            <h2>Recognition & Credentials</h2>
-            <p>Honors and certifications that reflect Venkat's commitment to excellence and lifelong learning.</p>
-          </div>
-          <div class="awards-list">
-            <div class="award-card">
-              <h3> ITIL Foundation </h3>
-              <span class="award-meta">AXELOS Global Best Practice</span>
-            </div>
-            <div class="award-card">
-              <h3>Certified Cloud Architect</h3>
-              <span class="award-meta">AWS Solutions Architect Associate</span>
-            </div>
-            <div class="award-card">
-              <h3>Certified Project Management Professional (PMP)</h3>
-              <span class="award-meta">Project Management Institute</span>
-            </div>
-            <div class="award-card">
-              <h3>Bladerunner Program Award</h3>
-              <span class="award-meta">S&P Global</span>
-            </div>
-            <div class="award-card">
-              <h3>Microsoft Certified AI Fundamentals</h3>
-              <span class="award-meta">Microsoft</span>
+            <div class="portrait-caption">
+              <span>Data &amp; Analytics Executive</span>
+              <span>Cloud | AI | Platforms</span>
             </div>
           </div>
         </div>
-      </section>
-      <section id="testimonials" class="section testimonials">
-        <div class="container">
-          <div class="section-header centered">
-            <span class="eyebrow">Testimonials</span>
-            <h2>What partners &amp; colleagues say</h2>
+        <div class="hero-intro">
+          <span class="eyebrow">Strategic data &amp; AI leadership</span>
+          <h1>Venkata (Venkat) Kondepati</h1>
+          <p>
+            Modernising data ecosystems, activating AI capabilities, and steering global delivery teams so that
+            enterprises can move from raw information to measurable business outcomes.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Start a conversation</a>
+            <a class="button ghost" href="assets/venkata-kondepati-resume.pdf" download>Download resume</a>
           </div>
-          <div class="testimonial-grid">
-            <figure class="testimonial-card">
-              <blockquote>
-                “Venkat has a rare ability to connect the boardroom vision to engineering execution. He brings focus,
-                empathy, and urgency that galvanize teams to deliver.”
-              </blockquote>
-              <figcaption>
-                <span class="name">Chief Technology Officer</span>
-                <span class="role">Fortune 100 financial services firm</span>
-              </figcaption>
-            </figure>
-            <figure class="testimonial-card">
-              <blockquote>
-                “His stewardship of our global data programme accelerated our transformation by years. Venkat creates
-                clarity, builds trust, and leaves lasting capability.”
-              </blockquote>
-              <figcaption>
-                <span class="name">VP, Enterprise Transformation</span>
-                <span class="role">Global Financial company</span>
-              </figcaption>
-            </figure>
-            <figure class="testimonial-card">
-              <blockquote>
-                “A masterclass in mentorship. Venkat champions diverse talent and gives teams the tools to solve
-                problems creatively and responsibly.”
-              </blockquote>
-              <figcaption>
-                <span class="name">Director of Data Science</span>
-                <span class="role">Commodity Insights innovator</span>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact">
-        <div class="container contact-container">
-          <div class="section-header">
-            <span class="eyebrow">Connect</span>
-            <h2>Let's create momentum together</h2>
-            <p>
-              Whether you need a strategic advisor, programme leader, or keynote voice, Venkat is open to meaningful
-              conversations. Share a bit about your ambitions and he will respond personally.
-            </p>
-          </div>
-          <div class="contact-form">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8-Q358ESDfni8XCHxp1-V3Aw2h-J5jC7HHFj3LcSC39BBcQ/viewform?embedded=true" width="640" height="1158" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            <p class="privacy-note">
-              Prefer email? Reach Venkat at
-              <a href="mailto:venkata.kondepati@gmail.com">venkata.kondepati@gmail.com</a>.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-
-    <footer class="site-footer">
-      <div class="container footer-container">
-        <p>© <span id="current-year"></span> Venkata Kondepati. Crafted with purpose.</p>
-        <div class="footer-links">
-          <a href="https://www.linkedin.com/in/venkatkondepati/" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="mailto:venkata.kondepati@gmail.com">Email</a>
+          <dl class="hero-stats" aria-label="Career highlights">
+            <div>
+              <dt>Years delivering transformation</dt>
+              <dd><span class="stat-number">20+</span></dd>
+            </div>
+            <div>
+              <dt>Enterprise programmes guided</dt>
+              <dd><span class="stat-number">25</span></dd>
+            </div>
+            <div>
+              <dt>Global teams mentored</dt>
+              <dd><span class="stat-number">3</span> continents</dd>
+            </div>
+          </dl>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="scripts/main.js" defer></script>
-  </body>
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">About</span>
+          <h2>From data vision to measurable value</h2>
+          <p>
+            Venkat partners with senior leadership to translate complex data ambitions into resilient
+            platforms, responsibly governed information, and intelligent experiences that propel growth.
+          </p>
+        </div>
+        <div class="section-body">
+          <article class="about-card">
+            <h3>Trusted advisor &amp; builder</h3>
+            <p>
+              A technologist by craft and strategist at heart, Venkat Kondepati brings over two decades of expertise in
+              cloud engineering, data platforms,
+              and enterprise architecture. He has led large-scale global migrations to the cloud, architected
+              multi-region high-availability platforms and
+              AI-driven insight engines, and championed product-thinking across distributed teams. With a proven record
+              of delivery excellence and
+              change enablement, Venkat consistently bridges technology strategy with measurable business impact.
+            </p>
+            <ul class="chip-list">
+              <li>Enterprise data platforms</li>
+              <li>AI/ML acceleration</li>
+              <li>Cloud modernization</li>
+              <li>Data governance &amp; quality</li>
+              <li>Enterprise GIS</li>
+              <li>Global delivery leadership</li>
+            </ul>
+          </article>
+          <article class="about-card">
+            <h3>Outcome obsessed</h3>
+            <p>
+              Venkat is known for aligning cross-functional groups around shared OKRs, embedding measurement into
+              every initiative, and leaving clients with sustainable capabilities that endure past launch.
+            </p>
+            <div class="impact-grid">
+              <div>
+                <span class="impact-number">$850M</span>
+                <span class="impact-caption">Value unlocked for transformation portfolios*</span>
+              </div>
+              <div>
+                <span class="impact-number">200+</span>
+                <span class="impact-caption">Data professionals coached</span>
+              </div>
+            </div>
+            <p class="footnote">*Aggregated business value across long-term programmes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="eyebrow">Career timeline</span>
+          <h2>Guiding enterprise-scale data journeys</h2>
+          <p>
+            Highlights from Venkat's leadership across consulting, industry, and product organizations.
+          </p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-year">Aug 2025 — Present</span>
+            <h3>Manager, Data Architecture &amp; Engineering</h3>
+            <p class="timeline-organization">Ascentt</p>
+            <p>
+              Lead Technical Data Architecture and Engineering Solutions to deliver scalable, secure, and
+              high-performance enterprise platforms, aligning with business objectives and industry best practices.
+            </p>
+            <ul>
+              <li>Perform prototypes and design innovative, affordable, and sustainable solutions leveraging Snowflake,
+                Databricks, Generative AI (GenAI), Machine Learning (ML), Artificial Intelligence (AI), and Agentic AI
+                to address complex business and operational challenges.</li>
+              <li>Architect and implement Geospatial and Spatial Intelligence solutions integrating large-scale spatial
+                datasets with advanced analytics to support decision-making across multiple industries.</li>
+              <li>Drive Cloud Engineering and Operations, enabling high availability, cost optimization, automation, and
+                performance tuning across AWS, Azure, and GCP environments.</li>
+              <li>Collaborate with cross-functional teams to ensure solutions are future-ready, compliant with
+                governance policies, and optimized for operational excellence.</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-year">Mar 2010 — June 2025</span>
+            <h3>Director, Data &amp; AI Platforms</h3>
+            <p class="timeline-organization">S&P Global</p>
+            <p>
+              Led global engineering teams to modernize platforms, strengthen cybersecurity, and deliver large-scale
+              cloud transformation across Identity & Access Management, Cloud Operations, and Data Engineering.
+            </p>
+            <ul>
+              <li>Directed Customer IAM (SAM Platform), building a multi-region active-active identity ecosystem
+                supporting 1.4M users and 80+ applications.</li>
+              <li>Orchestrated large-scale cloud migrations, modernizing legacy platforms with AWS, Azure, and GCP.</li>
+              <li>Built and scaled Snowflake-based data lakes and Kubernetes (EKS/AKS) workloads.</li>
+              <li>Implemented DevSecOps pipelines with Terraform, SonarQube, Mend, and ArgoCD to ensure security and
+                automation.</li>
+              <li>Embedded FinOps practices, IAM policies, and compliance controls for cost optimization and governance.
+              </li>
+              <li>Fostered a culture of product thinking, agile execution, and delivery excellence across distributed
+                teams.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-year">Feb 2007 — Feb 2010</span>
+            <h3>Technical Lead – GIS &amp; Data</h3>
+            <p class="timeline-organization">Wipro Technologies Ltd.</p>
+            <p>
+              Led enterprise application development and large-scale GIS projects for global clients, delivering
+              innovative solutions in energy, utilities, and public sector domains.
+            </p>
+            <ul>
+              <li>Directed end-to-end project delivery, managing cross-functional teams and client stakeholders across
+                geographies.</li>
+              <li>Designed and implemented GIS-based solutions (ArcGIS, ArcInfo, ArcView, AutoCAD Map) to support land
+                management, utilities, and infrastructure projects.</li>
+              <li>Migrated legacy GIS platforms to modern enterprise systems, improving scalability and data accuracy.
+              </li>
+              <li>Introduced Agile practices and quality controls to improve delivery timelines and reduce defects.</li>
+              <li>Recognized for on-time, high-quality delivery and client satisfaction on multimillion-dollar
+                engagements.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-year">Feb 2004 — Feb 2007</span>
+            <h3>GIS Developer &amp; Analyst</h3>
+            <p class="timeline-organization">Avineon India Pvt Ltd.</p>
+            <p>
+              Automated spatial data validation and geometric integrity checks,
+              logging violations in a centralized error-tracking database—enhancing overall data quality and
+              consistency.
+            </p>
+            <ul>
+              <li>Designed and developed a custom data migration tool to convert data across multiple GIS formats (DWG,
+                DGN, SHP, PGDB, and SDE) without FME, saving on licensing costs and improving flexibility.</li>
+              <li>Integrated Autodesk Map workflows with ArcMap to simplify dimension capture processes, improving
+                accuracy and reducing manual effort during data creation and editing phases.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-year">Apr 2001 — Feb 2004</span>
+            <h3>CAD &amp; GIS Engineer</h3>
+            <p class="timeline-organization">Trigeo Technologies Pvt Ltd.</p>
+            <p>
+              Conducted comprehensive quality control and accuracy verification to ensure data integrity and alignment
+              with engineering standards.
+              Led and mentored a team of GIS analysts, providing day-to-day supervision, technical training, and
+              performance feedback to deliver high-quality geospatial deliverables on schedule.
+            </p>
+            <ul>
+              <li>Digitized stormwater pipeline networks using plat maps, survey drawings, and land base references,
+                ensuring accurate and reliable infrastructure modeling for urban planning.</li>
+              <li>Developed custom AML scripts to automate tasks such as annotation placement, layer clipping, and
+                spatial alignment—reducing manual effort and improving production speed.</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="spotlight" class="section spotlight">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Spotlight</span>
+          <h2>Signature programmes &amp; proof points</h2>
+          <p>
+            A snapshot of programmes that showcase Venkat's blend of strategy, architecture, and empathetic
+            leadership.
+          </p>
+        </div>
+        <div class="spotlight-grid">
+          <article class="spotlight-card">
+            <h3>Customer 360 intelligence fabric</h3>
+            <p>
+              Harmonized fragmented data into a privacy-first graph, empowering marketers and service teams with a
+              360° view that elevated personalization, retention, and compliance readiness.
+            </p>
+            <ul>
+              <li>Deployed event-driven pipelines across Azure and Snowflake.</li>
+              <li>Activated real-time propensity models with MLOps guardrails.</li>
+              <li>Delivered measurable uplift: +22% cross-sell, -18% churn.</li>
+            </ul>
+          </article>
+          <article class="spotlight-card">
+            <h3>Intelligent operations nerve center</h3>
+            <p>
+              Orchestrated a command centre experience blending IoT telemetry, predictive maintenance, and scenario
+              planning dashboards for a global manufacturer.
+            </p>
+            <ul>
+              <li>Integrated OT and IT data across 30+ plants.</li>
+              <li>Established a digital twin for asset reliability and workforce safety.</li>
+              <li>Unlocked $120M in cost avoidance within two years.</li>
+            </ul>
+          </article>
+          <article class="spotlight-card">
+            <h3>Data culture transformation</h3>
+            <p>
+              Partnered with HR and business leaders to craft a change playbook—combining skill academies, community
+              rituals, and KPI storytelling—to embed data literacy and experimentation.
+            </p>
+            <ul>
+              <li>Designed curricula for analyst, product, and executive personas.</li>
+              <li>Launched a data value scorecard across 40 product lines.</li>
+              <li>Lifted engagement scores by 30 points within the first year.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise" class="section expertise">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="eyebrow">Expertise</span>
+          <h2>End-to-end capabilities</h2>
+          <p>Core strengths that Venkat brings to every engagement.</p>
+        </div>
+        <div class="expertise-grid">
+          <article class="expertise-card">
+            <h3>Strategy &amp; vision</h3>
+            <p>
+              Portfolio roadmapping, value framing, executive storytelling, and OKR alignment that keep investments
+              tied to business priorities.
+            </p>
+          </article>
+          <article class="expertise-card">
+            <h3>Architecture leadership</h3>
+            <p>
+              Cloud-native reference architectures, data mesh &amp; fabric patterns, API-first integration, and modern
+              analytics/AI platforms.
+            </p>
+          </article>
+          <article class="expertise-card">
+            <h3>Delivery excellence</h3>
+            <p>
+              Lean portfolio management, DataOps, product operating models, and scaled agile ceremonies across global
+              teams.
+            </p>
+          </article>
+          <article class="expertise-card">
+            <h3>Change enablement</h3>
+            <p>
+              Communication architectures, literacy programmes, and community-building that ensure adoption,
+              compliance, and sustainable success.
+            </p>
+          </article>
+          <article class="expertise-card">
+            <h3>Governance &amp; trust</h3>
+            <p>
+              Metadata strategy, privacy-by-design, Responsible AI, and regulatory alignment for highly scrutinized
+              industries.
+            </p>
+          </article>
+          <article class="expertise-card">
+            <h3>Innovation &amp; incubation</h3>
+            <p>
+              Rapid experimentation frameworks, venture-style incubators, and partnerships with startups, academia,
+              and hyperscalers.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="insights" class="section insights">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Featured insights</span>
+          <h2>Perspectives &amp; speaking highlights</h2>
+          <p>Selected topics Venkat regularly shares with boards, executive teams, and industry forums.</p>
+        </div>
+        <div class="insight-grid">
+          <article class="insight-card">
+            <h3>Modern data operating models</h3>
+            <p>
+              A pragmatic approach to data product thinking, federated stewardship, and value-realization metrics that
+              resonate with both business and technology stakeholders.
+            </p>
+            <a class="text-link" href="#contact">Request the keynote deck →</a>
+          </article>
+          <article class="insight-card">
+            <h3>Responsible AI guardrails</h3>
+            <p>
+              Balancing innovation with accountability through model risk frameworks, transparent governance, and
+              human-centred design practices.
+            </p>
+            <a class="text-link" href="#contact">Invite Venkat to speak →</a>
+          </article>
+          <article class="insight-card">
+            <h3>Cloud economics for data leaders</h3>
+            <p>
+              Lessons learned from migrating mission-critical workloads, optimizing spend, and sustaining agile
+              delivery across hybrid environments.
+            </p>
+            <a class="text-link" href="#contact">Schedule a briefing →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="blogs" class="section blogs">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="eyebrow">Blogs & Publications</span>
+          <h2>Thought Leadership & Insights</h2>
+          <p>Explore Venkat's latest articles, whitepapers, and featured publications on data, analytics, and digital
+            transformation.</p>
+        </div>
+        <div class="blog-list"> <!-- new here -->
+          <!-- <article class="blog-card">
+            <h3>
+              <a href="#">
+                title
+              </a>
+            </h3>
+            <p>Description</p>
+            <span class="blog-meta"> </span>
+          </article> -->
+          <article class="blog-card">
+            <h3>
+              <a
+                href="https://www.forbes.com/councils/forbestechcouncil/2026/01/23/modernizing-mission-critical-systems-without-disrupting-revenue/">
+                Modernizing Mission-Critical Systems Without Disrupting Revenue
+              </a>
+            </h3>
+            <p>Forbes Technology Council · Jan 23, 2026</p>
+            <span class="blog-meta"> </span>
+          </article>
+          <article class="blog-card">
+            <h3>
+              <a
+                href="https://techstrong.it/features/cloud-finops-and-security-centralized-control-vs-empowered-teams/">
+                Cloud FinOps and Security: Centralized Control vs. Empowered Teams
+              </a>
+            </h3>
+            <p>Techstrong.IT · Jan 16, 2026</p>
+            <span class="blog-meta"> </span>
+          </article>
+          <article class="blog-card">
+            <h3>
+              <a
+                href="https://www.forbes.com/councils/forbestechcouncil/2026/01/13/the-most-promising-ways-to-turn-personal-data-into-real-income/">
+                The Most Promising Ways To Turn Personal Data Into Real Income
+              </a>
+            </h3>
+            <p>Forbes Technology Council · Jan 13, 2026</p>
+            <span class="blog-meta"> </span>
+          </article>
+          <article class="blog-card">
+            <h3>
+              <a href="https://techstrong.it/features/cloud-migrations-that-actually-work-lessons-from-the-trenches/">
+                Cloud Migrations That Actually Work: Lessons From the Trenches
+              </a>
+            </h3>
+            <p>Techstrong.IT · Jan 6, 2026</p>
+            <span class="blog-meta"> </span>
+          </article>
+          <article class="blog-card">
+            <h3>
+              <a href="https://aijourn.com/the-missing-variable-why-enterprise-ai-needs-spatial-intelligence/">
+                The Missing Variable – Why Enterprise AI Needs Spatial Intelligence
+              </a>
+            </h3>
+            <p>The AI Journal · Jan 5, 2026</p>
+            <span class="blog-meta"> </span>
+          </article>
+          <article class="blog-card">
+            <h3>
+              <a
+                href="https://www.forbes.com/councils/forbestechcouncil/2025/12/19/ways-robotics-will-soon-go-mainstream-across-major-industries/">
+                Ways Robotics Will Soon Go Mainstream Across Major Industries
+              </a>
+            </h3>
+            <p>Forbes Technology Council · Dec 19, 2025</p>
+            <span class="blog-meta"> </span>
+          </article>
+          <article class="blog-card">
+            <h3>
+              <a
+                href="https://www.forbes.com/councils/forbestechcouncil/2025/12/15/beyond-high-availability-why-customer-iam-must-go-multi-region-active-active/">
+                Beyond High Availability: Why Customer IAM Must Go Multi-Region Active-Active
+              </a>
+            </h3>
+            <p>Forbes Technology Council · Dec 15, 2025</p>
+            <span class="blog-meta"> </span>
+          </article>
+          <article class="blog-card">
+            <h3>
+              <a
+                href="https://community.esri.com/t5/community-blog/how-they-helped-me-build-a-supply-chain-disruption/ba-p/1672478">
+                How They Helped Me Build a Supply Chain Disruption & Routing POC Using ArcGIS
+              </a>
+            </h3>
+            <p>ESRI ArcGIS Blogs · Dec 12, 2025</p>
+            <span class="blog-meta"> </span>
+          </article>
+          <article class="blog-card">
+            <h3>
+              <a
+                href="https://www.forbes.com/councils/forbestechcouncil/2025/11/26/event-driven-architecture-watch-out-for-these-pitfalls-and-drawbacks/">
+                Event-Driven Architecture: Watch Out For These Pitfalls And Drawbacks
+              </a>
+            </h3>
+            <p>Forbes Technology Council · Nov 26, 2025</p>
+            <span class="blog-meta"> </span>
+          </article>
+          <article class="blog-card">
+            <h3>
+              <a
+                href="https://www.forbes.com/councils/forbestechcouncil/2025/11/04/20-tech-experts-share-keys-to-long-term-multicloud-success/">
+                20 Tech Experts Share Keys To Long-Term Multicloud Success
+              </a>
+            </h3>
+            <p>Forbes Technology Council · Nov 4, 2025</p>
+            <span class="blog-meta"> </span>
+          </article>
+          <article class="blog-card">
+            <h3>
+              <a
+                href="https://www.bbntimes.com/technology/from-data-centers-to-cloud-lessons-in-leading-enterprise-scale-infrastructure-transformation">
+                From Data Centers to Cloud, Lessons in Leading Enterprise-Scale Infrastructure Transformation
+              </a>
+            </h3>
+            <p>BBN Times · Oct 30, 2025</p>
+            <span class="blog-meta"> </span>
+          </article>
+          <article class="blog-card">
+            <h3>
+              <a
+                href="https://www.forbes.com/councils/forbestechcouncil/2025/10/28/transforming-yourself-during-the-ai-revolution/">
+                Transforming Yourself During The 'AI Revolution'
+              </a>
+            </h3>
+            <p>Forbes · Oct 28, 2025</p>
+            <span class="blog-meta"> </span>
+          </article>
+          <article class="blog-card">
+            <h3>
+              <a
+                href="https://community.esri.com/t5/cloud-computing-blog/accelerating-acreage-grading-with-arcgis-pro-3d/bc-p/1660857#M5">
+                Accelerating Acreage Grading with ArcGIS Pro 3D and AWS Cloud Automation
+              </a>
+            </h3>
+            <p>ESRI · Oct 17, 2025</p>
+            <span class="blog-meta"> </span>
+          </article>
+          <article class="blog-card">
+            <h3>
+              <a
+                href="https://www.forbes.com/councils/forbestechcouncil/2025/10/03/programmatic-technology-applications-that-are-transforming-industries/">
+                Programmatic Technology Applications That Are Transforming Industries
+              </a>
+            </h3>
+            <p>Forbes Technology Council · Oct 3, 2025</p>
+            <span class="blog-meta"> </span>
+          </article>
+          <article class="blog-card">
+            <h3><a href="#">The Future of Data Platforms</a></h3>
+            <p>How modern architectures are reshaping business agility and innovation.</p>
+            <span class="blog-meta"> </span>
+          </article>
+          <article class="blog-card">
+            <h3><a href="#">AI Ethics in Practice</a></h3>
+            <p>Building responsible AI systems for regulated industries.</p>
+            <span class="blog-meta"> </span>
+          </article>
+          <article class="blog-card">
+            <h3><a href="#">Cloud Migration Playbook</a></h3>
+            <p>Lessons learned from 20+ enterprise cloud journeys.</p>
+            <span class="blog-meta"> </span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards" class="section awards">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="eyebrow">Awards & Certifications</span>
+          <h2>Recognition & Credentials</h2>
+          <p>Honors and certifications that reflect Venkat's commitment to excellence and lifelong learning.</p>
+        </div>
+        <div class="awards-list">
+          <div class="award-card">
+            <h3>DevOps Enterprise Leader of the Year 2025 (Finalist)</h3>
+            <span class="award-meta">Forbes Technology Council</span>
+          </div>
+          <div class="award-card">
+            <h3> ITIL Foundation </h3>
+            <span class="award-meta">AXELOS Global Best Practice</span>
+          </div>
+          <div class="award-card">
+            <h3>Certified Cloud Architect</h3>
+            <span class="award-meta">AWS Solutions Architect Associate</span>
+          </div>
+          <div class="award-card">
+            <h3>Certified Project Management Professional (PMP)</h3>
+            <span class="award-meta">Project Management Institute</span>
+          </div>
+          <div class="award-card">
+            <h3>Bladerunner Program Award</h3>
+            <span class="award-meta">S&P Global</span>
+          </div>
+          <div class="award-card">
+            <h3>Microsoft Certified AI Fundamentals</h3>
+            <span class="award-meta">Microsoft</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="eyebrow">Testimonials</span>
+          <h2>What partners &amp; colleagues say</h2>
+        </div>
+        <div class="testimonial-grid">
+          <figure class="testimonial-card">
+            <blockquote>
+              “Venkat has a rare ability to connect the boardroom vision to engineering execution. He brings focus,
+              empathy, and urgency that galvanize teams to deliver.”
+            </blockquote>
+            <figcaption>
+              <span class="name">Chief Technology Officer</span>
+              <span class="role">Fortune 100 financial services firm</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <blockquote>
+              “His stewardship of our global data programme accelerated our transformation by years. Venkat creates
+              clarity, builds trust, and leaves lasting capability.”
+            </blockquote>
+            <figcaption>
+              <span class="name">VP, Enterprise Transformation</span>
+              <span class="role">Global Financial company</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <blockquote>
+              “A masterclass in mentorship. Venkat champions diverse talent and gives teams the tools to solve
+              problems creatively and responsibly.”
+            </blockquote>
+            <figcaption>
+              <span class="name">Director of Data Science</span>
+              <span class="role">Commodity Insights innovator</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-container">
+        <div class="section-header">
+          <span class="eyebrow">Connect</span>
+          <h2>Let's create momentum together</h2>
+          <p>
+            Whether you need a strategic advisor, programme leader, or keynote voice, Venkat is open to meaningful
+            conversations. Share a bit about your ambitions and he will respond personally.
+          </p>
+        </div>
+        <div class="contact-form">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSe8-Q358ESDfni8XCHxp1-V3Aw2h-J5jC7HHFj3LcSC39BBcQ/viewform?embedded=true"
+            width="640" height="1158" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <p class="privacy-note">
+            Prefer email? Reach Venkat at
+            <a href="mailto:venkata.kondepati@gmail.com">venkata.kondepati@gmail.com</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>© <span id="current-year"></span> Venkata Kondepati. Crafted with purpose.</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/venkatkondepati/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:venkata.kondepati@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+
 </html>
