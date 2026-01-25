@@ -1,5 +1,5 @@
 // Auto-scroll to Google Form confirmation after submission
-window.addEventListener('message', function(event) {
+window.addEventListener('message', function (event) {
   if (typeof event.data === 'string' && event.data.indexOf('Thank you') !== -1) {
     var contactSection = document.getElementById('contact');
     if (contactSection) {
@@ -84,30 +84,77 @@ window.addEventListener('message', function(event) {
   }
 
   const sections = Array.from(document.querySelectorAll('main section[id]'));
-  if ('IntersectionObserver' in window && sections.length) {
-    const navObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const { target, isIntersecting } = entry;
-          if (isIntersecting) {
-            const id = target.getAttribute('id');
-            navLinks.forEach((link) => {
-              if (link.getAttribute('href') === `#${id}`) {
-                link.classList.add('is-active');
-              } else {
-                link.classList.remove('is-active');
-              }
-            });
+
+  /* 
+    Robust Navigation Highlighting (Focus-Line Strategy)
+    - Determines active section based on a virtual "focus line" at ~35% of the viewport.
+    - Handles Top-of-Page (Hero -> About) and Bottom-of-Page (Footer -> Connect) edge cases.
+  */
+  const updateNavHighlight = () => {
+    if (!sections.length || !navLinks.length) return;
+
+    // Focus Line: The point the user is likely reading (35% down the screen)
+    const focusLine = window.innerHeight * 0.35;
+    const docHeight = document.body.offsetHeight;
+    let currentSectionId = '';
+
+    // 1. Force "Connect" if we are at the very bottom
+    if ((window.innerHeight + window.scrollY) >= docHeight - 50) {
+      currentSectionId = 'contact';
+    }
+    // 2. Force "About" if we are at the very top (Hero section)
+    else if (window.scrollY < 100) {
+      currentSectionId = 'about';
+    }
+    else {
+      // 3. Focus Line Strategy
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= focusLine && rect.bottom > focusLine) {
+          currentSectionId = section.getAttribute('id');
+        }
+      });
+
+      // 4. Fallback: If no section covers the line, find the closest one above
+      if (!currentSectionId) {
+        let maxTop = -Infinity;
+        sections.forEach((section) => {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= focusLine && rect.top > maxTop) {
+            maxTop = rect.top;
+            currentSectionId = section.getAttribute('id');
           }
         });
-      },
-      {
-        rootMargin: '-40% 0px -40% 0px',
-        threshold: 0.2,
       }
-    );
-    sections.forEach((section) => navObserver.observe(section));
-  }
+    }
+
+    // Special handling: 'hero' maps to 'about' navigation
+    if (currentSectionId === 'hero') currentSectionId = 'about';
+
+    if (currentSectionId) {
+      navLinks.forEach((link) => {
+        if (link.getAttribute('href') === `#${currentSectionId}`) {
+          link.classList.add('is-active');
+        } else {
+          link.classList.remove('is-active');
+        }
+      });
+    }
+  };
+
+  // Throttled scroll listener
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        updateNavHighlight();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  updateNavHighlight();
 
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
